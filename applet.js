@@ -58,6 +58,8 @@ MyApplet.prototype = {
         this.settings.bind("track-bitcoin", "trackBTC", this._update_value);
         this.settings.bind("track-ethereal", "trackETH", this._update_value);
         this.settings.bind("track-ripple", "trackXRP", this._update_value);
+
+        this._update_value();
     },
 
     _update_value: function () {
